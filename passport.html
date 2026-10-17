@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Изменяем кириллицу на латиницу по клику - Плацкарт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+<header>
+    <a class="brand" href="index.html"><img src="assets/train.jpg" width="38" height="38" alt="На главную"> Плацкарт</a>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="rules.html">Нумерация</a>
+        <a href="scheme.html">Схема</a>
+        <a href="table.html">Таблица</a>
+        <a href="forms.html">Формы</a>
+        <a href="dom.html">Считываем из DOM</a>
+        <a href="passport.html" class="active">Кириллица -> латиница</a>
+        <a href="task.html">Задача</a>
+        <a href="rules.html#side">О боковых местах</a>
+        <a href="https://www.rzd.ru/" target="_blank" rel="noopener">Сайт РЖД ↗</a>
+    </nav>
+</header>
+<main>
+    <h1>Смена кириллицы на латиницу по клику</h1>
+    <div class="passport-image">
+    <span class="issued">ГУ МВД ПО Г. МОСКВЕ</span>
+    <span class="issue-date">01.01.2020</span>
+    <span class="issue-code">770-001</span>
+
+    <img class="passport-photo"
+         src="assets/person.svg"
+         alt="Фото владельца">
+
+    <span class="surname" id="surname">Голубчиков</span>
+    <span class="first-name" id="first-name">Захар</span>
+    <span class="patronymic" id="ssurname">??</span>
+    <span class="sex">МУЖ.</span>
+    <span class="birth-year" id="birth-year">2008</span>
+    <span class="birthplace">Г. МОСКВА</span>
+</div>
+    <button id="translate" type="button">Заменить на латиницу</button>
+</main>
+<footer><a href="#top">К началу ↑</a></footer>
+<script src="js/passport.js"></script>
+</body>
+</html>

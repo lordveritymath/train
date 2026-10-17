@@ -1,0 +1,158 @@
+/* Основная страница */
+body {
+    background: #f5f3ee;
+    color: #233630;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+/* Название сайта и меню */
+a {
+    color: #245c47;
+}
+
+.brand {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav a {
+    display: inline-block;
+    margin: 4px 10px 4px 0;
+}
+
+.active {
+    background: #245c47;
+    color: white;
+}
+
+/* Поля форм */
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input, textarea, button {
+    font: inherit;
+    border: 1px solid gray;
+    border-radius: 0;
+    padding: 4px;
+}
+
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+button {
+    background: #245c47;
+    color: white;
+    border-color: #245c47;
+}
+
+figcaption {
+    color: #53645d;
+}
+
+#result {
+    width: 260px;
+}
+
+/* Таблица */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-image: url("assets/paper.svg");
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+/* Скриншот под паспортом */
+main > img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Текст и фотография поверх бланка паспорта */
+.passport-image {
+    position: relative;
+    width: 378px;
+    height: 529px;
+    background-image: url("assets/pass.jfif");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: "Times New Roman", serif;
+    font-size: 14px;
+    color: black;
+    line-height: 1.6;
+}
+
+.passport-image span {
+    position: absolute;
+}
+
+.issued {
+    top: 75px;
+    left: 90px;
+}
+
+.issue-date {
+    top: 135px;
+    left: 30px;
+}
+
+.issue-code {
+    top: 135px;
+    left: 155px;
+}
+
+.passport-photo {
+    position: absolute;
+    top: 325px;
+    left: 19px;
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.surname {
+    top: 292px;
+    left: 180px;
+}
+
+.first-name {
+    top: 332px;
+    left: 180px;
+}
+
+.patronymic {
+    top: 352px;
+    left: 180px;
+}
+
+.sex {
+    top: 372px;
+    left: 140px;
+}
+
+.birth-year {
+    top: 372px;
+    left: 220px;
+}
+
+.birthplace {
+    top: 392px;
+    left: 180px;
+}

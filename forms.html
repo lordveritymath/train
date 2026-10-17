@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Формы — Плацкарт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+<header>
+    <a class="brand" href="index.html"><img src="assets/train.jpg" width="38" height="38" alt="На главную"> Плацкарт</a>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="rules.html">Нумерация</a>
+        <a href="scheme.html">Схема</a>
+        <a href="table.html">Таблица</a>
+        <a href="forms.html" class="active">Формы</a>
+        <a href="dom.html">Считываем из DOM</a>
+        <a href="passport.html">Кириллица -> латиница</a>
+        <a href="task.html">Задача</a>
+        <a href="rules.html#side">О боковых местах</a>
+        <a href="https://www.rzd.ru/" target="_blank" rel="noopener">Сайт РЖД ↗</a>
+    </nav>
+</header>
+<main>
+    <h1>Формы</h1>
+    <h2>Контактные данные</h2>
+    <form action="https://httpbin.org/get" method="get" target="_blank">
+        <label>Фамилия <input type="text" name="surname" value="Иванов" required></label>
+        <label>Имя <input type="text" name="first_name" value="Иван" required></label>
+        <label>Группа <input type="text" name="group" value="БМТ255" required></label>
+        <label>Мобильный телефон <input type="tel" name="phone" placeholder="+7…" required></label>
+        <label>Электронная почта <input type="email" name="email" placeholder="name@example.com" required></label>
+        <label>Дата отправки <input type="date" name="message_date" required></label>
+        <button type="submit">Отправить контакты</button>
+    </form>
+    <h2>Предпочтения для поездки</h2>
+    <form action="https://httpbin.org/get" method="get" target="_blank">
+        <label>Маршрут <input type="text" name="route" value="Москва — Санкт-Петербург" required></label>
+        <label>Номер места <input type="number" name="seat_number" min="1" max="54" step="1" value="37" required></label>
+        <fieldset>
+            <legend>Предпочитаемая полка</legend>
+            <label><input type="radio" name="berth" value="lower" checked> Нижняя</label>
+            <label><input type="radio" name="berth" value="upper"> Верхняя</label>
+        </fieldset>
+        <label><input type="checkbox" name="bed_linen" value="yes" checked> Постельное бельё</label>
+        <label>Дата поездки <input type="date" name="departure_date" value="2026-12-01" required></label>
+        <label>Учебный пароль заявки <input type="password" name="demo_password" value="demo1005" required></label>
+        <input type="hidden" name="carriage_type" value="platzkart">
+        <button type="submit">Отправить предпочтения</button>
+        <button type="reset">Вернуть значения по умолчанию</button>
+    </form>
+</main>
+<footer><a href="#top">К началу ↑</a></footer>
+
+</body>
+</html>

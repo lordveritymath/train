@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Решение алгоритмической задачи - Плацкарт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+<header>
+    <a class="brand" href="index.html"><img src="assets/train.jpg" width="38" height="38" alt="На главную"> Плацкарт</a>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="rules.html">Нумерация</a>
+        <a href="scheme.html">Схема</a>
+        <a href="table.html">Таблица</a>
+        <a href="forms.html">Формы</a>
+        <a href="dom.html">Считываем из DOM</a>
+        <a href="passport.html">Кириллица -> латиница</a>
+        <a href="task.html" class="active">Задача</a>
+        <a href="rules.html#side">О боковых местах</a>
+        <a href="https://www.rzd.ru/" target="_blank" rel="noopener">Сайт РЖД ↗</a>
+    </nav>
+</header>
+<main>
+    <h1>Решение алгоритмической задачи</h1>
+    <form id="seat-form" action="https://httpbin.org/get" method="get" target="_blank">
+        <label>Формулировка задачи
+            <textarea name="formulation" rows="3" readonly>Дано: номер места в плацкартном вагоне. Определить, какое это место: верхнее или нижнее, в купе или боковое.</textarea>
+        </label>
+        <label for="seat">Номер места (от 1 до 54)</label>
+        <input id="seat" name="seat_number" type="number" min="1" max="54" step="1" value="37" required>
+        <label for="result">Результат</label>
+        <input id="result" name="result" type="text" readonly value="Нажми «Определить»">
+        <button id="calculate" type="button">Определить</button>
+        <button type="submit">Отправить условие, номер и результат</button>
+    </form>
+    <p>Будем использовать стандартную схему на 54 места, т.е. нечётные - нижние, чётные - верхние; 1–36 - в купе, 37–54 - боковые</p>
+</main>
+<footer><a href="#top">К началу ↑</a></footer>
+<script src="js/task.js"></script>
+</body>
+</html>
