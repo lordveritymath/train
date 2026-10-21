@@ -7,7 +7,7 @@ function translatePassport() {
     if (surname.innerText === "Голубчиков") {
         surname.innerText = "Golubchikov";
         firstName.innerText = "Zakhar";
-        ssurname.innerText = "??";
+        ssurname.innerText = "BLABLABLA";
         button.innerText = "Заменить на кириллицу";
     } else {
         surname.innerText = "Голубчиков";
