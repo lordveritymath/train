@@ -12,7 +12,7 @@ function translatePassport() {
     } else {
         surname.innerText = "Голубчиков";
         firstName.innerText = "Захар";
-        ssurname.innerText = "??"
+        ssurname.innerText = "БЛАБЛАБЛА"
         button.innerText = "Заменить на латиницу";
     }
 }
